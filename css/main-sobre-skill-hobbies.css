@@ -17,7 +17,7 @@
     margin: 1em;
 }
 
-.gremio {
+.gremio, .texto__link {
     color: rgb(30, 81, 247);
     font-size: 16px;
     transition: .5s;
