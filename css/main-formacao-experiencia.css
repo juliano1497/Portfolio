@@ -1,0 +1,101 @@
+/*FORMAÇÃO*/
+.formacao__div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img__formacao {
+    padding: 2.5em 0 0;
+    width: 80vw;
+}
+
+.titulo__detalhe {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em 0 0.3em 0;
+}
+
+.descricao__formacao {
+    padding: 0 0 1em;
+}
+
+/*EXPERIÊNCIA PROFISSIONAL*/
+
+.experiencia__div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projetos__alura {
+    width: 85vw;
+}
+
+.descricao__challenge {
+    font-size: 14px;
+    padding-bottom: 1em;
+}
+
+.experiencia__botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 3em;
+}
+
+.botao__repositorio {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: 1s;
+}
+
+.botao__repositorio:hover {
+    background: rgba(42, 122, 228, 1);
+    border: 1px solid rgba(42, 122, 228, 1);
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+.botao__demo {
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    transition: 1s;
+}
+
+.botao__demo:hover {
+    background: rgba(212, 228, 250, 1); 
+    border: 1px solid rgba(42, 122, 228, 1);
+    color: rgba(42, 122, 228, 1);
+    padding: 10px 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .titulo__formacao {
+        font-size: 32px;
+        padding-top: 2em;
+    }
+    
+    .img__formacao {
+    width: 30vw;
+    }
+
+    .botao__repositorio, .botao__demo {
+        padding: 10px 65px;
+      }
+
+      .botao__repositorio:hover {
+        padding: 15px 80px;
+    }
+
+      .botao__demo:hover {
+        padding: 15px 80px;
+    }
+}

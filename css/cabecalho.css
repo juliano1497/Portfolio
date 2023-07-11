@@ -1,0 +1,211 @@
+/*CABEÇALHO*/
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.container__estrela {
+    display: flex;
+}
+
+.estrela{
+    margin: 1.2em 0 0 1em;
+    width: 15px;
+}
+
+.div__estrela {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2em 0 0;
+    width: 8px;
+}
+
+.nome{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 1.8em;
+    width: 27vw;
+}
+
+.container__info {
+    display: flex;
+    justify-content: end;
+    width: 60vw;
+}
+
+.email {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1.8em 0.5em 0 0;
+}
+
+.ancora {
+    display: none;
+} 
+
+.container__info a:hover {
+    color: rgba(85, 149, 233, 1);
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.container__div a:hover, .titulo__descricao a:hover, .descricao__formacao a:hover {
+    color: rgba(85, 149, 233, 1);
+    font-size: 18px;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+/*APRESENTAÇÃO DAS INFORMAÇÕES*/
+.perfil {
+    border-radius: 100%;
+    margin: 1.5em 1em 0;
+    width: 100px
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.titulo__descricao {
+    margin: 1em;
+}
+
+/*CONTEÚDO DOS LINKS DE REDIRECIONAMENTO DE PÁGINAS*/
+
+.container__link {
+    display: flex;
+    font-size: 14px;
+    margin: 1em 0 2em 0;
+}
+
+.container__div {
+    margin: 0 0.3em 0 1em;
+}
+
+/*RESPONSIVIDADE TABLET*/
+
+@media screen and (min-width: 768px) {
+
+    .estrela {
+        margin: 1.8em 0 0 1em;
+    }
+    
+    .div__estrela{
+        margin: 2em 0 0
+    }
+    
+    .nome {
+        font-size: 16px;
+        margin-top: 2em;
+        width: 20vw;
+    }
+
+    .container__info {
+        width: 70vw;
+    }
+
+    .email {
+        font-size: 16px;
+        margin-top: 2em;
+    }
+
+    .perfil {
+        left: 73%;
+        position: absolute;
+        width: 150px;
+    }
+
+    .titulo {
+        max-width: 500px;
+        padding: 1em 0;
+    }
+
+    .titulo__descricao {
+        max-width: 500px;
+    }
+
+    .container__div {
+        margin: 0 4em 0 1em;
+    }
+
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+    
+    .container__estrela {
+        display: flex;
+    }
+    
+    .estrela {
+        margin: 2em 0 0 5em;
+    }
+
+    .div__estrela {
+        margin: 2.2em 0 0;
+    }
+
+    .nome {
+        margin-top: 2.2em;
+    }
+    
+    .container__info {
+        justify-content: end;
+        width: 67vw;
+    }
+    
+    .ancora, .email {
+        color:black;
+        display: block;
+        margin: 2em 0.5em 0 0.5em;
+        text-decoration: none;
+    }
+    
+    .perfil {
+        padding: 2em 0.5em;
+        width: 250px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        margin: 0 0 0 2em;
+        max-width: 690px;
+        padding: 2em 0 1em;
+    }
+
+    .titulo__descricao {
+        font-size: 22px;
+        margin: 0 0 0 3.6em;
+        max-width: 690px;
+    }
+
+    .container__div {
+        margin: 1em 0 1em 80px;
+        font-size: 22px;
+    }
+
+    .container__div a:hover, .titulo__descricao a:hover, .descricao__formacao a:hover {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .titulo {
+        max-width: 900px;
+      }
+
+      .titulo__descricao {
+        max-width: 900px;
+      }
+
+      .container__div {
+        margin: 1em 4em 1em 3.6em;
+      }
+}
+

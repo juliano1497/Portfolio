@@ -1,0 +1,57 @@
+html {
+    background: #2A7AE4;
+}
+
+.container__header {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    width: 100vw;
+}
+    
+.ancora {
+    font-size: 40px;
+    text-decoration: overline;
+    transition: .5s;
+}
+
+.ancora:hover {
+    font-size: 50px;
+    color: rgb(197, 220, 250);
+    text-decoration: underline;
+}
+    
+.container__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    width: 100vw;
+}
+    
+.titulo__mensagem {
+    color: #fefefe;
+    font-size: 40px;
+}
+    
+.container__rodape {
+    align-items: center;
+    color: #fefefe;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100vw;
+}
+
+@media screen and  (max-width: 550px) {
+    .ancora {
+        font-size: 20px;
+    }
+
+    .titulo__mensagem {
+        font-size: 20px;
+    }
+}
+

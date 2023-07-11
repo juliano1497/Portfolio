@@ -1,0 +1,141 @@
+/*CONTATO*/
+.contato__rodape {
+    background: #EAF2FD;
+}
+
+.telefone__form {
+    display: none;
+}
+
+.titulo__container {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0.7em;
+    padding-top: 1em; 
+}
+
+.descricao__contato {
+    margin: 1em;
+}
+
+form {
+    margin: 0 1em;
+}
+
+.formulario__div, .formulario__mensagem {
+    margin: 1.36em 0;
+    position: relative;
+}
+
+.formulario__div label, .formulario__mensagem label{
+    bottom: 5px;
+    color: #C8C8C8;
+    cursor: text;
+    left: 10px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario__mensagem label {
+    bottom: 110px;
+}
+
+.input{
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    color: rgb(80,80,80);
+    font-size: 16px;
+    outline: 0;
+    padding: 0.5em 0;
+    transition: 0.5s ease-in-out;
+    width: 90vw;
+}
+
+.mensagem__input {
+    height: 120px;
+    resize: none;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid #2A7AE4;
+}
+
+.input:focus ~ label,
+.input:valid ~ label{
+    color: #2A7AE4;
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+
+.submit {
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0 0 1.5em;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+.submit:hover {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(6, 6, 243);
+    color: #2A7AE4;
+    padding: 15px 25px;
+}
+
+.rodape {
+    align-items: center;
+    background: rgba(245, 245, 245, 1);
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rodape__text {
+    padding: 0.5em 0;
+    font-size: 12px;
+}
+
+.mensagem-erro {
+    color: rgb(199, 0, 0);
+    position: absolute;
+    left: 6px;
+    top: 40px;
+}
+
+.form-mensagem {
+    top: 140px;
+}
+
+@media screen and (min-width: 768px) {
+    .rodape__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__divs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .telefone__form {
+        display: block;
+        margin: 2.5em 0 0 2.5em;
+        width: 364px;
+    }
+
+    .input {
+        width: 50vw;
+    }
+
+    .rodape__text {
+        font-size: 22px;
+    }
+}
+
+
